@@ -1,0 +1,33 @@
+{
+  "name": "nerd-quiz-engine",
+  "version": "1.0.0",
+  "description": "",
+  "license": "GPL-3.0",
+  "author": "GusDev",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gusdev.qnze",
+    "productName": "NerdQuizEngine",
+    "linux": {
+      "target": "AppImage"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "@eslint/css": "^1.1.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "electron": "^41.2.0",
+    "electron-builder": "^26.8.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.5.0"
+  }
+}

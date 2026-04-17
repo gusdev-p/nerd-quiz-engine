@@ -1,0 +1,130 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background-color: #1c1c1c;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 3px;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* divs */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+.user-hello {
+  height: 30px;
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  color: #f3f3f3;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* extra user-hello */
+
+.user-name {
+  background-color: transparent;
+  border: none;
+  color: #f3f3f3;
+  font-weight: bold;
+  height: 30px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: large;
+}
+
+.user-name:hover {
+  cursor: pointer;
+}
+
+/* end extra user-hello */
+
+.title {
+  width: 160px;
+  height: 30px;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.title label {
+  font-weight: bold;
+}
+
+.top-bar {
+  width: 100%;
+  height: 120px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+/* extra top-bar */
+
+.top-bar button {
+  --scale: 1;
+  --y: 0px;
+  height: 30px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #3c3c3c;
+  border: none;
+  border-radius: 12px;
+  color: #f3f3f3;
+  font-weight: bold;
+  transform: scale(var(--scale)) translateY(var(--y));
+  transition: transform 0.2s ease-in;
+  @media (width < 120px) {
+    border-radius: 8px;
+  }
+}
+
+.top-bar button:hover {
+  cursor: pointer;
+  --scale: 1.1;
+  --y: -2px;
+}
+
+/* end of extra top-bar */
+
+.recent-projects {
+  width: 100%;
+  min-height: 150px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+}

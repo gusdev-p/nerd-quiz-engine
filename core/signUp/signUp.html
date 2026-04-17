@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up - Nerd Quiz Engine</title>
+  </head>
+  <body>
+    <div class="title">
+      <label>Sign Up</label>
+    </div>
+    <div class="about">
+      <label
+        >This account is local, only used to set up developer informations in
+        your projects.</label
+      >
+    </div>
+    <div class="content">
+      <label for="future-user-name">Username:</label>
+      <input type="text" placeholder="Your username." id="future-user-name" />
+      <label for="future-user-email">Email:</label>
+      <input type="email" id="future-user-email" placeholder="Your Email." />
+      <label for="future-user-icon">Icon:</label>
+      <input type="file" id="future-user-icon" accept="image/*" />
+      <label for="future-user-desc">Description:</label>
+      <input
+        type="text"
+        id="future-user-desc"
+        placeholder="Your description."
+        style="width: 60%"
+      />
+      <button id="submit-sign">Sign Up.</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
