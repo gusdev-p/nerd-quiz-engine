@@ -17,6 +17,8 @@ body {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 13px;
 }
 body::-webkit-scrollbar {
@@ -90,4 +92,19 @@ body::-webkit-scrollbar {
 .no-icon {
   color: #f3f3f3;
   font-weight: bold;
+}
+
+.go-btn {
+  width: 120px;
+  height: 30px;
+  padding: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  color: #f3f3f3;
+  font-weight: bold;
+}
+
+.go-btn:hover {
+  cursor: pointer;
 }

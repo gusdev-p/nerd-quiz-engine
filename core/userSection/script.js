@@ -5,8 +5,9 @@ const userIcon = document.getElementById("user-icon");
 const userName = document.getElementById("user-name");
 const noIcon = document.getElementById("no-icon");
 const userDesc = document.getElementById("user-desc");
+const goBtn = document.getElementById("go-btn");
 
-// vars
+// functions
 async function init() {
   const userBase = await window.api.call("load-save");
   if (userBase.success) {
@@ -29,5 +30,10 @@ async function init() {
     }
   }
 }
+
+//triggers
+goBtn.addEventListener("click", () => {
+  window.location.href = "../mainScreen/mainScreen.html";
+});
 
 init();
