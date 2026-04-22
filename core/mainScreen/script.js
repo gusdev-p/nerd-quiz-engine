@@ -3,6 +3,8 @@
 
 // assets
 const userNameBtn = document.getElementById("user-name");
+// main buttons
+const createProjectBtn = document.getElementById("create-project");
 
 // vars
 let userExist = false;
@@ -34,6 +36,13 @@ userNameBtn.addEventListener("click", () => {
   } else {
     window.location.href = "../signUp/signUp.html";
   }
+});
+
+createProjectBtn.addEventListener("click", () => {
+  window.api.call("create-window", {
+    windowPath: "core/createProject/createProject.html",
+    windowResize: false,
+  });
 });
 
 init();
